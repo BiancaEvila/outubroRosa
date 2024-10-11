@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    background-color: #FF69B4;
+    color: white;
+    height: 10.93vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 30%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.sobre {
+    height: 27.05vh;
+    background-color: #FFD9EC;
+}
+
+.conscientização {
+    height: 20vh;
+    background-color: #FF69B4;
+}
+
+.dicas {
+    height: 27.05vh;
+    background-color: #FFD9EC;
+}
+
+footer {
+    height: 15vh;
+    background-color: #FF69B4;
+}
