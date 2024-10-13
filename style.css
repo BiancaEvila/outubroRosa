@@ -1,19 +1,31 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: "Noto Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
   background-color: #FF69B4;
   color: white;
-  height: 10.93vh;
+  height: 10vh;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+}
+header nav {
+  width: 40%;
+}
+header nav a {
+  color: white;
 }
 
 .containerLogo {
@@ -23,33 +35,97 @@ header {
   align-items: center;
 }
 
-nav {
-  width: 30%;
-}
-
 ul {
   display: flex;
   justify-content: space-between;
+  gap: 5px;
   align-items: center;
   color: white;
 }
-
-.sobre {
-  height: 27.05vh;
-  background-color: #FFD9EC;
+ul li {
+  padding: 15px;
+  border-radius: 5px;
 }
 
-.conscientização {
-  height: 20vh;
+li:hover {
+  background-color: #d43585;
+}
+
+#containerSobre {
+  height: 100vh;
+  background-color: #FFD9EC;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#containerSobre img {
+  width: 365px;
+  height: 355px;
+}
+#containerSobre p {
+  color: black;
+  width: 587px;
+  height: 265px;
+  font-size: 25px;
+}
+
+#containerConscientizacao {
+  height: 100vh;
   background-color: #FF69B4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#containerConscientizacao img {
+  width: 421px;
+  height: 234px;
+}
+#containerConscientizacao p {
+  color: white;
+  width: 648px;
+  height: 174px;
+  font-size: 25px;
 }
 
-.dicas {
-  height: 27.05vh;
+#containerDicas {
+  height: 100vh;
   background-color: #FFD9EC;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#containerDicas img {
+  width: 250px;
+  height: 250px;
 }
 
 footer {
-  height: 15vh;
+  height: 20vh;
   background-color: #FF69B4;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer img {
+  width: 105px;
+  height: 109px;
+}
+
+.redesSociais img {
+  width: 57.84px;
+  height: 56px;
+}
+
+.dadosSite {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dadosSite p {
+  width: 100% px;
+  height: 27px;
+  font-size: 20px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
