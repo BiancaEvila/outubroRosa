@@ -16,7 +16,7 @@ html {
 header {
     background-color: #FF69B4;
     color: white;
-    height: 10vh;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -106,8 +106,15 @@ li:hover {
     img {
         width: 250px;
         height: 250px;
+        transition: 0.3s;
+        
+    }
+
+    img:hover {
+        transform: scale(1.05);
     }
 }
+
 
 footer {
     height: 20vh;
@@ -116,9 +123,11 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     
-    img {
+    #lacoRosa {
         width: 105px;
         height: 109px;
+        transform: scale(1.1);
+        animation: rotate 6s linear infinite;
     }
 }
 
@@ -127,10 +136,14 @@ footer {
         width: 57.84px;
         height: 56px;
     }
+
+    img:hover {
+        filter: drop-shadow(0px 0px 5px #d43585);
+    }
 }
 
 .dadosSite {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,5 +154,14 @@ footer {
         height: 27px;
         font-size: 20px;
         color: white;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
